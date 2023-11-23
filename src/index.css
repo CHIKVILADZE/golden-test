@@ -1,13 +1,34 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Indie Flower';
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.bg {
+  background-image: url(./assets/golden.png);
+  width: 393px;
+  height: 890px;
+  background-size: cover;
+}
+
+.placeholder-opacity-100::placeholder {
+  font-family: 'Imprima';
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
 }

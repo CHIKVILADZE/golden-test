@@ -12,6 +12,7 @@
 
 body {
   font-family: 'Indie Flower';
+  background-image: url(./assets/bg.png);
 }
 
 code {
